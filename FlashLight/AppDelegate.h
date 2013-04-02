@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+@class MarsMainViewController;
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+
+@property (nonatomic, retain) MarsMainViewController *marsController;
 
 @end

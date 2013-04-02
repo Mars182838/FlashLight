@@ -21,6 +21,30 @@
 		0ADA04CD170AAF5600DD5E99 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ADA04AE170AAF5500DD5E99 /* Foundation.framework */; };
 		0ADA04D5170AAF5600DD5E99 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0ADA04D3170AAF5600DD5E99 /* InfoPlist.strings */; };
 		0ADA04D8170AAF5600DD5E99 /* FlashLightTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ADA04D7170AAF5600DD5E99 /* FlashLightTests.m */; };
+		0ADA04E6170AAFEF00DD5E99 /* MarsMainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ADA04E5170AAFEE00DD5E99 /* MarsMainView.m */; };
+		0ADA04E9170AB00D00DD5E99 /* MarsMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0ADA04E8170AB00D00DD5E99 /* MarsMainViewController.m */; };
+		0ADA04ED170AB39900DD5E99 /* sf_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADA04EB170AB39900DD5E99 /* sf_bg.png */; };
+		0ADA04EE170AB39900DD5E99 /* sf_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADA04EC170AB39900DD5E99 /* sf_bg@2x.png */; };
+		0ADA0510170AB44E00DD5E99 /* sf_button_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADA04EF170AB44E00DD5E99 /* sf_button_normal.png */; };
+		0ADA0511170AB44E00DD5E99 /* sf_button_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADA04F0170AB44E00DD5E99 /* sf_button_normal@2x.png */; };
+		0ADA0512170AB44E00DD5E99 /* sf_button_tapped.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADA04F1170AB44E00DD5E99 /* sf_button_tapped.png */; };
+		0ADA0513170AB44E00DD5E99 /* sf_button_tapped@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADA04F2170AB44E00DD5E99 /* sf_button_tapped@2x.png */; };
+		0ADA0514170AB44E00DD5E99 /* sf_compass_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADA04F3170AB44E00DD5E99 /* sf_compass_bg.png */; };
+		0ADA0515170AB44E00DD5E99 /* sf_compass_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADA04F4170AB44E00DD5E99 /* sf_compass_bg@2x.png */; };
+		0ADA0516170AB44E00DD5E99 /* sf_compass_glass_cover.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADA04F5170AB44E00DD5E99 /* sf_compass_glass_cover.png */; };
+		0ADA0517170AB44E00DD5E99 /* sf_compass_glass_cover@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADA04F6170AB44E00DD5E99 /* sf_compass_glass_cover@2x.png */; };
+		0ADA0518170AB44E00DD5E99 /* sf_compass_rotating_object.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADA04F7170AB44E00DD5E99 /* sf_compass_rotating_object.png */; };
+		0ADA0519170AB44E00DD5E99 /* sf_compass_rotating_object@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADA04F8170AB44E00DD5E99 /* sf_compass_rotating_object@2x.png */; };
+		0ADA0526170AB44E00DD5E99 /* sf_strobe_controller_bg.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADA0505170AB44E00DD5E99 /* sf_strobe_controller_bg.png */; };
+		0ADA0527170AB44E00DD5E99 /* sf_strobe_controller_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADA0506170AB44E00DD5E99 /* sf_strobe_controller_bg@2x.png */; };
+		0ADA052E170AB44E00DD5E99 /* shutter_up.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0ADA050D170AB44E00DD5E99 /* shutter_up.wav */; };
+		0ADA052F170AB44E00DD5E99 /* sound_off.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0ADA050E170AB44E00DD5E99 /* sound_off.wav */; };
+		0ADA0530170AB44E00DD5E99 /* sound_on.wav in Resources */ = {isa = PBXBuildFile; fileRef = 0ADA050F170AB44E00DD5E99 /* sound_on.wav */; };
+		0ADA0532170ABA4400DD5E99 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ADA0531170ABA4200DD5E99 /* CoreLocation.framework */; };
+		0ADA053C170AC43600DD5E99 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ADA053B170AC43400DD5E99 /* AVFoundation.framework */; };
+		0ADA053E170AC8DD00DD5E99 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ADA053D170AC8DB00DD5E99 /* AudioToolbox.framework */; };
+		0ADA0549170AD49D00DD5E99 /* faderKey.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADA0547170AD48C00DD5E99 /* faderKey.png */; };
+		0ADA054A170AD49D00DD5E99 /* faderTrack.png in Resources */ = {isa = PBXBuildFile; fileRef = 0ADA0548170AD49300DD5E99 /* faderTrack.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +77,32 @@
 		0ADA04D4170AAF5600DD5E99 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0ADA04D6170AAF5600DD5E99 /* FlashLightTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlashLightTests.h; sourceTree = "<group>"; };
 		0ADA04D7170AAF5600DD5E99 /* FlashLightTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlashLightTests.m; sourceTree = "<group>"; };
+		0ADA04E4170AAFEE00DD5E99 /* MarsMainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarsMainView.h; sourceTree = "<group>"; };
+		0ADA04E5170AAFEE00DD5E99 /* MarsMainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarsMainView.m; sourceTree = "<group>"; };
+		0ADA04E7170AB00D00DD5E99 /* MarsMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarsMainViewController.h; sourceTree = "<group>"; };
+		0ADA04E8170AB00D00DD5E99 /* MarsMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarsMainViewController.m; sourceTree = "<group>"; };
+		0ADA04EB170AB39900DD5E99 /* sf_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sf_bg.png; sourceTree = "<group>"; };
+		0ADA04EC170AB39900DD5E99 /* sf_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sf_bg@2x.png"; sourceTree = "<group>"; };
+		0ADA04EF170AB44E00DD5E99 /* sf_button_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sf_button_normal.png; sourceTree = "<group>"; };
+		0ADA04F0170AB44E00DD5E99 /* sf_button_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sf_button_normal@2x.png"; sourceTree = "<group>"; };
+		0ADA04F1170AB44E00DD5E99 /* sf_button_tapped.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sf_button_tapped.png; sourceTree = "<group>"; };
+		0ADA04F2170AB44E00DD5E99 /* sf_button_tapped@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sf_button_tapped@2x.png"; sourceTree = "<group>"; };
+		0ADA04F3170AB44E00DD5E99 /* sf_compass_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sf_compass_bg.png; sourceTree = "<group>"; };
+		0ADA04F4170AB44E00DD5E99 /* sf_compass_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sf_compass_bg@2x.png"; sourceTree = "<group>"; };
+		0ADA04F5170AB44E00DD5E99 /* sf_compass_glass_cover.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sf_compass_glass_cover.png; sourceTree = "<group>"; };
+		0ADA04F6170AB44E00DD5E99 /* sf_compass_glass_cover@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sf_compass_glass_cover@2x.png"; sourceTree = "<group>"; };
+		0ADA04F7170AB44E00DD5E99 /* sf_compass_rotating_object.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sf_compass_rotating_object.png; sourceTree = "<group>"; };
+		0ADA04F8170AB44E00DD5E99 /* sf_compass_rotating_object@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sf_compass_rotating_object@2x.png"; sourceTree = "<group>"; };
+		0ADA0505170AB44E00DD5E99 /* sf_strobe_controller_bg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sf_strobe_controller_bg.png; sourceTree = "<group>"; };
+		0ADA0506170AB44E00DD5E99 /* sf_strobe_controller_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sf_strobe_controller_bg@2x.png"; sourceTree = "<group>"; };
+		0ADA050D170AB44E00DD5E99 /* shutter_up.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = shutter_up.wav; sourceTree = "<group>"; };
+		0ADA050E170AB44E00DD5E99 /* sound_off.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = sound_off.wav; sourceTree = "<group>"; };
+		0ADA050F170AB44E00DD5E99 /* sound_on.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = sound_on.wav; sourceTree = "<group>"; };
+		0ADA0531170ABA4200DD5E99 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		0ADA053B170AC43400DD5E99 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		0ADA053D170AC8DB00DD5E99 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		0ADA0547170AD48C00DD5E99 /* faderKey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = faderKey.png; sourceTree = "<group>"; };
+		0ADA0548170AD49300DD5E99 /* faderTrack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = faderTrack.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +110,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0ADA053E170AC8DD00DD5E99 /* AudioToolbox.framework in Frameworks */,
+				0ADA053C170AC43600DD5E99 /* AVFoundation.framework in Frameworks */,
+				0ADA0532170ABA4400DD5E99 /* CoreLocation.framework in Frameworks */,
 				0ADA04AD170AAF5500DD5E99 /* UIKit.framework in Frameworks */,
 				0ADA04AF170AAF5500DD5E99 /* Foundation.framework in Frameworks */,
 				0ADA04B1170AAF5500DD5E99 /* CoreGraphics.framework in Frameworks */,
@@ -101,6 +154,9 @@
 		0ADA04AB170AAF5500DD5E99 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0ADA053D170AC8DB00DD5E99 /* AudioToolbox.framework */,
+				0ADA053B170AC43400DD5E99 /* AVFoundation.framework */,
+				0ADA0531170ABA4200DD5E99 /* CoreLocation.framework */,
 				0ADA04AC170AAF5500DD5E99 /* UIKit.framework */,
 				0ADA04AE170AAF5500DD5E99 /* Foundation.framework */,
 				0ADA04B0170AAF5500DD5E99 /* CoreGraphics.framework */,
@@ -112,8 +168,10 @@
 		0ADA04B2170AAF5500DD5E99 /* FlashLight */ = {
 			isa = PBXGroup;
 			children = (
-				0ADA04BB170AAF5600DD5E99 /* AppDelegate.h */,
-				0ADA04BC170AAF5600DD5E99 /* AppDelegate.m */,
+				0ADA04E3170AAFBC00DD5E99 /* Mode */,
+				0ADA04E2170AAFB100DD5E99 /* Controller */,
+				0ADA04E1170AAFA700DD5E99 /* View */,
+				0ADA04EA170AB38B00DD5E99 /* Resource */,
 				0ADA04B3170AAF5500DD5E99 /* Supporting Files */,
 			);
 			path = FlashLight;
@@ -150,6 +208,59 @@
 				0ADA04D3170AAF5600DD5E99 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0ADA04E1170AAFA700DD5E99 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0ADA04E4170AAFEE00DD5E99 /* MarsMainView.h */,
+				0ADA04E5170AAFEE00DD5E99 /* MarsMainView.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		0ADA04E2170AAFB100DD5E99 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				0ADA04E7170AB00D00DD5E99 /* MarsMainViewController.h */,
+				0ADA04E8170AB00D00DD5E99 /* MarsMainViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		0ADA04E3170AAFBC00DD5E99 /* Mode */ = {
+			isa = PBXGroup;
+			children = (
+				0ADA04BB170AAF5600DD5E99 /* AppDelegate.h */,
+				0ADA04BC170AAF5600DD5E99 /* AppDelegate.m */,
+			);
+			name = Mode;
+			sourceTree = "<group>";
+		};
+		0ADA04EA170AB38B00DD5E99 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				0ADA0547170AD48C00DD5E99 /* faderKey.png */,
+				0ADA0548170AD49300DD5E99 /* faderTrack.png */,
+				0ADA04EF170AB44E00DD5E99 /* sf_button_normal.png */,
+				0ADA04F0170AB44E00DD5E99 /* sf_button_normal@2x.png */,
+				0ADA04F1170AB44E00DD5E99 /* sf_button_tapped.png */,
+				0ADA04F2170AB44E00DD5E99 /* sf_button_tapped@2x.png */,
+				0ADA04F3170AB44E00DD5E99 /* sf_compass_bg.png */,
+				0ADA04F4170AB44E00DD5E99 /* sf_compass_bg@2x.png */,
+				0ADA04F5170AB44E00DD5E99 /* sf_compass_glass_cover.png */,
+				0ADA04F6170AB44E00DD5E99 /* sf_compass_glass_cover@2x.png */,
+				0ADA04F7170AB44E00DD5E99 /* sf_compass_rotating_object.png */,
+				0ADA04F8170AB44E00DD5E99 /* sf_compass_rotating_object@2x.png */,
+				0ADA0505170AB44E00DD5E99 /* sf_strobe_controller_bg.png */,
+				0ADA0506170AB44E00DD5E99 /* sf_strobe_controller_bg@2x.png */,
+				0ADA050D170AB44E00DD5E99 /* shutter_up.wav */,
+				0ADA050E170AB44E00DD5E99 /* sound_off.wav */,
+				0ADA050F170AB44E00DD5E99 /* sound_on.wav */,
+				0ADA04EB170AB39900DD5E99 /* sf_bg.png */,
+				0ADA04EC170AB39900DD5E99 /* sf_bg@2x.png */,
+			);
+			name = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,6 +338,25 @@
 				0ADA04BF170AAF5600DD5E99 /* Default.png in Resources */,
 				0ADA04C1170AAF5600DD5E99 /* Default@2x.png in Resources */,
 				0ADA04C3170AAF5600DD5E99 /* Default-568h@2x.png in Resources */,
+				0ADA04ED170AB39900DD5E99 /* sf_bg.png in Resources */,
+				0ADA04EE170AB39900DD5E99 /* sf_bg@2x.png in Resources */,
+				0ADA0510170AB44E00DD5E99 /* sf_button_normal.png in Resources */,
+				0ADA0511170AB44E00DD5E99 /* sf_button_normal@2x.png in Resources */,
+				0ADA0512170AB44E00DD5E99 /* sf_button_tapped.png in Resources */,
+				0ADA0513170AB44E00DD5E99 /* sf_button_tapped@2x.png in Resources */,
+				0ADA0514170AB44E00DD5E99 /* sf_compass_bg.png in Resources */,
+				0ADA0515170AB44E00DD5E99 /* sf_compass_bg@2x.png in Resources */,
+				0ADA0516170AB44E00DD5E99 /* sf_compass_glass_cover.png in Resources */,
+				0ADA0517170AB44E00DD5E99 /* sf_compass_glass_cover@2x.png in Resources */,
+				0ADA0518170AB44E00DD5E99 /* sf_compass_rotating_object.png in Resources */,
+				0ADA0519170AB44E00DD5E99 /* sf_compass_rotating_object@2x.png in Resources */,
+				0ADA0526170AB44E00DD5E99 /* sf_strobe_controller_bg.png in Resources */,
+				0ADA0527170AB44E00DD5E99 /* sf_strobe_controller_bg@2x.png in Resources */,
+				0ADA052E170AB44E00DD5E99 /* shutter_up.wav in Resources */,
+				0ADA052F170AB44E00DD5E99 /* sound_off.wav in Resources */,
+				0ADA0530170AB44E00DD5E99 /* sound_on.wav in Resources */,
+				0ADA0549170AD49D00DD5E99 /* faderKey.png in Resources */,
+				0ADA054A170AD49D00DD5E99 /* faderTrack.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +393,8 @@
 			files = (
 				0ADA04B9170AAF5600DD5E99 /* main.m in Sources */,
 				0ADA04BD170AAF5600DD5E99 /* AppDelegate.m in Sources */,
+				0ADA04E6170AAFEF00DD5E99 /* MarsMainView.m in Sources */,
+				0ADA04E9170AB00D00DD5E99 /* MarsMainViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
