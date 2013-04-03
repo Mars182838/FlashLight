@@ -20,7 +20,8 @@
         _labelImage.image = [UIImage imageNamed:@"sf_strobe_controller_bg.png"];
         [self addSubview:_labelImage];
         
-        _faderSlider = [[UISlider alloc] initWithFrame:CGRectMake(0, 10, 320, 10)];
+        /// 滑杆 
+        _faderSlider = [[UISlider alloc] initWithFrame:CGRectMake(20, 10, 280, 10)];
         _faderSlider.backgroundColor = [UIColor clearColor];
         UIImage *stechTrack = [[UIImage imageNamed:@"faderTrack.png"] stretchableImageWithLeftCapWidth:10.0f topCapHeight:0.0];
         [_faderSlider setThumbImage:[UIImage imageNamed:@"faderKey.png"] forState:UIControlStateNormal];
@@ -28,7 +29,6 @@
         [_faderSlider setMaximumTrackImage:stechTrack forState:UIControlStateNormal];
         [self addSubview:_faderSlider];
         
-
         /// 显示的文字
         _sliderLabel = [[UILabel alloc] initWithFrame:CGRectMake(30, 40, 260, 30)];
         _sliderLabel.backgroundColor = [UIColor clearColor];
@@ -58,8 +58,40 @@
         [_lightBtn setImage:[UIImage imageNamed:@"sf_button_normal.png"] forState:UIControlStateNormal];
         [self addSubview:_lightBtn];
         
+        /// 灯光渐变的背景图片
+        _lightImage = [[UIImageView alloc] initWithFrame:CGRectMake(70, 280, 193, 99)];
+        [self addSubview:_lightImage];
+        
+        /// 控制是否打开闪关灯的Button
+        _switchBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        _switchBtn.frame = CGRectMake(20, 160, 40, 40);
+        [_switchBtn setImage:[UIImage imageNamed:@"22.png"] forState:UIControlStateNormal];
+        [self addSubview:_switchBtn];
+        
+        
+        _editerBtn = [UIButton buttonWithType:UIButtonTypeCustom];
+        _editerBtn.frame = CGRectMake(20, 230, 40, 40);
+        [_editerBtn setImage:[UIImage imageNamed:@"editer.jpg"] forState:UIControlStateNormal];
+        [self addSubview:_editerBtn];
+        
     }
     return self;
+}
+
+-(void)dealloc
+{
+    [_backImage    release];
+    [_wightImage   release];
+    [_compassImage release];
+    [_labelImage   release];
+    [_switchBtn    release];
+    [_lightBtn     release];
+    [_sliderLabel  release];
+    [_faderSlider  release];
+    [_lightImage   release];
+    
+    [super dealloc];
+    
 }
 
 @end

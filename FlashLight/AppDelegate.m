@@ -22,7 +22,7 @@
 {
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     // Override point for customization after application launch.
-        
+    
     _marsController = [[MarsMainViewController alloc] initWithNibName:nil bundle:nil];
     self.window.rootViewController = _marsController;
     
@@ -40,14 +40,14 @@
 
 - (void)applicationDidEnterBackground:(UIApplication *)application
 {
-    [_marsController turnOffLight:YES];
+    [_marsController turnOnLight:NO];
 }
 
 /** 程序进入后台时，关闭手电筒功能  */
 - (void)applicationWillEnterForeground:(UIApplication *)application
 {
     if (_marsController.isLight) {
-        [_marsController turnOffLight:YES];
+        [_marsController turnOnLight:NO];
     }
 }
 

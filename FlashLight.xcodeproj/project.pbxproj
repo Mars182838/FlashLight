@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A9DB4C7170BD14F00C77A22 /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9DB4C6170BD14F00C77A22 /* 1.png */; };
+		0A9DB4CF170C1FE500C77A22 /* 11.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9DB4CD170C1FE500C77A22 /* 11.png */; };
+		0A9DB4D0170C1FE500C77A22 /* 22.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9DB4CE170C1FE500C77A22 /* 22.png */; };
+		0A9DB4D3170C248200C77A22 /* sf_button_light_sos.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9DB4D1170C248200C77A22 /* sf_button_light_sos.png */; };
+		0A9DB4D4170C248200C77A22 /* sf_button_light_sos@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9DB4D2170C248200C77A22 /* sf_button_light_sos@2x.png */; };
+		0A9DB4D7170C26DD00C77A22 /* sf_button_light_strobe.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9DB4D5170C26DD00C77A22 /* sf_button_light_strobe.png */; };
+		0A9DB4D8170C26DE00C77A22 /* sf_button_light_strobe@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9DB4D6170C26DD00C77A22 /* sf_button_light_strobe@2x.png */; };
+		0A9DB4DA170C2CF600C77A22 /* editer.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0A9DB4D9170C2CF600C77A22 /* editer.jpg */; };
+		0A9DB4DD170C302C00C77A22 /* MarsEditerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9DB4DC170C302C00C77A22 /* MarsEditerViewController.m */; };
+		0A9DB4DF170C35B500C77A22 /* BtnClose.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9DB4DE170C35B400C77A22 /* BtnClose.png */; };
 		0ADA04AD170AAF5500DD5E99 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ADA04AC170AAF5500DD5E99 /* UIKit.framework */; };
 		0ADA04AF170AAF5500DD5E99 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ADA04AE170AAF5500DD5E99 /* Foundation.framework */; };
 		0ADA04B1170AAF5500DD5E99 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ADA04B0170AAF5500DD5E99 /* CoreGraphics.framework */; };
@@ -58,6 +68,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A9DB4C6170BD14F00C77A22 /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		0A9DB4CC170C186400C77A22 /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Config.h; path = ../Config.h; sourceTree = "<group>"; };
+		0A9DB4CD170C1FE500C77A22 /* 11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 11.png; sourceTree = "<group>"; };
+		0A9DB4CE170C1FE500C77A22 /* 22.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 22.png; sourceTree = "<group>"; };
+		0A9DB4D1170C248200C77A22 /* sf_button_light_sos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sf_button_light_sos.png; sourceTree = "<group>"; };
+		0A9DB4D2170C248200C77A22 /* sf_button_light_sos@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sf_button_light_sos@2x.png"; sourceTree = "<group>"; };
+		0A9DB4D5170C26DD00C77A22 /* sf_button_light_strobe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sf_button_light_strobe.png; sourceTree = "<group>"; };
+		0A9DB4D6170C26DD00C77A22 /* sf_button_light_strobe@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sf_button_light_strobe@2x.png"; sourceTree = "<group>"; };
+		0A9DB4D9170C2CF600C77A22 /* editer.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = editer.jpg; sourceTree = "<group>"; };
+		0A9DB4DB170C302C00C77A22 /* MarsEditerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarsEditerViewController.h; sourceTree = "<group>"; };
+		0A9DB4DC170C302C00C77A22 /* MarsEditerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarsEditerViewController.m; sourceTree = "<group>"; };
+		0A9DB4DE170C35B400C77A22 /* BtnClose.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BtnClose.png; sourceTree = "<group>"; };
 		0ADA04A8170AAF5500DD5E99 /* FlashLight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlashLight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0ADA04AC170AAF5500DD5E99 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		0ADA04AE170AAF5500DD5E99 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -180,6 +202,7 @@
 		0ADA04B3170AAF5500DD5E99 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0A9DB4CC170C186400C77A22 /* Config.h */,
 				0ADA04B4170AAF5500DD5E99 /* FlashLight-Info.plist */,
 				0ADA04B5170AAF5600DD5E99 /* InfoPlist.strings */,
 				0ADA04B8170AAF5600DD5E99 /* main.m */,
@@ -224,6 +247,8 @@
 			children = (
 				0ADA04E7170AB00D00DD5E99 /* MarsMainViewController.h */,
 				0ADA04E8170AB00D00DD5E99 /* MarsMainViewController.m */,
+				0A9DB4DB170C302C00C77A22 /* MarsEditerViewController.h */,
+				0A9DB4DC170C302C00C77A22 /* MarsEditerViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -240,7 +265,16 @@
 		0ADA04EA170AB38B00DD5E99 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				0A9DB4DE170C35B400C77A22 /* BtnClose.png */,
+				0A9DB4D9170C2CF600C77A22 /* editer.jpg */,
+				0A9DB4D1170C248200C77A22 /* sf_button_light_sos.png */,
+				0A9DB4D2170C248200C77A22 /* sf_button_light_sos@2x.png */,
+				0A9DB4D5170C26DD00C77A22 /* sf_button_light_strobe.png */,
+				0A9DB4D6170C26DD00C77A22 /* sf_button_light_strobe@2x.png */,
+				0A9DB4CD170C1FE500C77A22 /* 11.png */,
+				0A9DB4CE170C1FE500C77A22 /* 22.png */,
 				0ADA0547170AD48C00DD5E99 /* faderKey.png */,
+				0A9DB4C6170BD14F00C77A22 /* 1.png */,
 				0ADA0548170AD49300DD5E99 /* faderTrack.png */,
 				0ADA04EF170AB44E00DD5E99 /* sf_button_normal.png */,
 				0ADA04F0170AB44E00DD5E99 /* sf_button_normal@2x.png */,
@@ -357,6 +391,15 @@
 				0ADA0530170AB44E00DD5E99 /* sound_on.wav in Resources */,
 				0ADA0549170AD49D00DD5E99 /* faderKey.png in Resources */,
 				0ADA054A170AD49D00DD5E99 /* faderTrack.png in Resources */,
+				0A9DB4C7170BD14F00C77A22 /* 1.png in Resources */,
+				0A9DB4CF170C1FE500C77A22 /* 11.png in Resources */,
+				0A9DB4D0170C1FE500C77A22 /* 22.png in Resources */,
+				0A9DB4D3170C248200C77A22 /* sf_button_light_sos.png in Resources */,
+				0A9DB4D4170C248200C77A22 /* sf_button_light_sos@2x.png in Resources */,
+				0A9DB4D7170C26DD00C77A22 /* sf_button_light_strobe.png in Resources */,
+				0A9DB4D8170C26DE00C77A22 /* sf_button_light_strobe@2x.png in Resources */,
+				0A9DB4DA170C2CF600C77A22 /* editer.jpg in Resources */,
+				0A9DB4DF170C35B500C77A22 /* BtnClose.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,6 +438,7 @@
 				0ADA04BD170AAF5600DD5E99 /* AppDelegate.m in Sources */,
 				0ADA04E6170AAFEF00DD5E99 /* MarsMainView.m in Sources */,
 				0ADA04E9170AB00D00DD5E99 /* MarsMainViewController.m in Sources */,
+				0A9DB4DD170C302C00C77A22 /* MarsEditerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -490,6 +534,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FlashLight/FlashLight-Prefix.pch";
 				INFOPLIST_FILE = "FlashLight/FlashLight-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -501,6 +546,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FlashLight/FlashLight-Prefix.pch";
 				INFOPLIST_FILE = "FlashLight/FlashLight-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -559,6 +605,7 @@
 				0ADA04DD170AAF5600DD5E99 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0ADA04DE170AAF5600DD5E99 /* Build configuration list for PBXNativeTarget "FlashLightTests" */ = {
 			isa = XCConfigurationList;
@@ -567,6 +614,7 @@
 				0ADA04E0170AAF5600DD5E99 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

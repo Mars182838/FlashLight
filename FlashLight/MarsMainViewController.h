@@ -18,25 +18,31 @@
 @interface MarsMainViewController : UIViewController<CLLocationManagerDelegate>
 {
     SystemSoundID soundID;
+    /// 当前的数据
     int currentValue;
+    
+    /// 定时器
+    NSTimer *timer;
+    
+    /// 是否正在闪烁
+    BOOL isShineOn;
+    
+    /// 是否支持闪烁
+    BOOL enableShine;
 }
 
+/// 是否打开手电筒
 @property (nonatomic) BOOL isLight;
 
 /// marsView 界面类
-@property (nonatomic, retain) MarsMainView *marsView;
+@property (nonatomic, strong) MarsMainView *marsView;
 
+/// locationManager 系统定位
 @property (nonatomic, strong) CLLocationManager *locationManager;
 
 /** 判断是否打开手电筒
  * @param update 为YES表示为打开，NO为关闭
  */
 -(void)turnOnLight:(BOOL)update;
-
-/** 判断是都关闭手电筒
- *@param update 为YES表示为关闭，NO为打开
- */
--(void)turnOffLight:(BOOL)update;
-
 
 @end
