@@ -21,9 +21,9 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-
-        _isLight = YES;
         
+        _isLight = YES;
+
     }
     return self;
 }
@@ -39,10 +39,10 @@
 
 /** 打开应用时开启自动定位 
  */
--(void)viewDidAppear:(BOOL)animated
+-(void)viewWillAppear:(BOOL)animated
 {
-    [super viewDidAppear:animated];
-    
+    [super viewWillAppear:animated];
+
     [self performSelector:@selector(startLocationHeadingEvents)];
 }
 
@@ -50,6 +50,8 @@
  */
 -(void)viewWillDisappear:(BOOL)animated
 {
+    [super viewWillDisappear:animated];
+    
     if (self.locationManager) {
         
         [_locationManager stopUpdatingLocation];///> 停止定位
@@ -60,7 +62,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"sf_bg.png"]];
+    self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"sf_bg"]];
     
     currentValue = MIN_FREQ;///> 设定滑竿的最小值
     
@@ -80,6 +82,8 @@
     _marsView.sliderLabel.text = [NSString stringWithFormat:@"%d HZ",(int)_marsView.faderSlider.value + 1];
     
     [self.view addSubview:_marsView];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(getShakeWithSwitch) name:@"shake" object:nil];
         
     /// 程序开启时打开手电筒的声音
     [self playServicesAudioWithResource:SOUND_ON];
@@ -196,7 +200,7 @@
         _isLight = YES;
         [self turnOnLight:NO];
         [self playServicesAudioWithResource:SOUND_OFF];
-        [_marsView.switchBtn setImage:[UIImage imageNamed:@"22.png"] forState:UIControlStateNormal];
+        [_marsView.switchBtn setImage:[UIImage imageNamed:@"clock.png"] forState:UIControlStateNormal];
         
     }else{
         // 灯光闪烁
@@ -205,8 +209,9 @@
         _isLight = YES;
         [self turnOnLight:YES];
         [self playServicesAudioWithResource:SOUND_Shutter];
-        [_marsView.switchBtn setImage:[UIImage imageNamed:@"11.png"] forState:UIControlStateNormal];
+        [_marsView.switchBtn setImage:[UIImage imageNamed:@"unclock.png"] forState:UIControlStateNormal];
     }
+    
     [self turnOnLight:YES];
     [self faderProgress:nil];
     
@@ -216,6 +221,16 @@
 {
     MarsEditerViewController *editerController = [[MarsEditerViewController alloc] initWithNibName:nil bundle:nil];
     [self presentViewController:editerController animated:YES completion:nil];
+}
+
+-(void)getShakeWithSwitch
+{
+    BOOL isShake = [[NSUserDefaults standardUserDefaults] boolForKey:@"setting"];
+    
+    if (isShake) {
+        
+        [self performSelector:@selector(lightOnOff:)];
+    }
 }
 
 #pragma mark - Audio Methods

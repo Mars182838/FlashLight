@@ -64,14 +64,13 @@
         
         /// 控制是否打开闪关灯的Button
         _switchBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        _switchBtn.frame = CGRectMake(20, 160, 40, 40);
-        [_switchBtn setImage:[UIImage imageNamed:@"22.png"] forState:UIControlStateNormal];
+        _switchBtn.frame = CGRectMake(30, 380, 60, 60);
+        [_switchBtn setImage:[UIImage imageNamed:@"clock.png"] forState:UIControlStateNormal];
         [self addSubview:_switchBtn];
         
-        
         _editerBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        _editerBtn.frame = CGRectMake(20, 230, 40, 40);
-        [_editerBtn setImage:[UIImage imageNamed:@"editer.jpg"] forState:UIControlStateNormal];
+        _editerBtn.frame = CGRectMake(230, 380, 60, 60);
+        [_editerBtn setImage:[UIImage imageNamed:@"set.png"] forState:UIControlStateNormal];
         [self addSubview:_editerBtn];
         
     }

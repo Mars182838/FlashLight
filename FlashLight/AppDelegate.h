@@ -7,12 +7,20 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WXApi.h"
+#import "MarsPainWindow.h"
 @class MarsMainViewController;
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate,WXApiDelegate>
+{
+    enum WXScene _scene;
 
-@property (strong, nonatomic) UIWindow *window;
+}
+
+@property (strong, nonatomic) MarsPainWindow *window;
 
 @property (nonatomic, retain) MarsMainViewController *marsController;
+
+@property (nonatomic, retain) SendMessageToWXReq *req;
 
 @end
