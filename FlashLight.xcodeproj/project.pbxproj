@@ -7,21 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A26DFF61712600B006D10BF /* artilce_icon_return.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A26DFF41712600B006D10BF /* artilce_icon_return.png */; };
+		0A26DFF71712600B006D10BF /* artilce_icon_return@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A26DFF51712600B006D10BF /* artilce_icon_return@2x.png */; };
 		0A74E546170C7CD0008E4EB6 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A74E545170C7CD0008E4EB6 /* MessageUI.framework */; };
 		0A9DB4D3170C248200C77A22 /* sf_button_light_sos.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9DB4D1170C248200C77A22 /* sf_button_light_sos.png */; };
 		0A9DB4D4170C248200C77A22 /* sf_button_light_sos@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9DB4D2170C248200C77A22 /* sf_button_light_sos@2x.png */; };
 		0A9DB4D7170C26DD00C77A22 /* sf_button_light_strobe.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9DB4D5170C26DD00C77A22 /* sf_button_light_strobe.png */; };
 		0A9DB4D8170C26DE00C77A22 /* sf_button_light_strobe@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9DB4D6170C26DD00C77A22 /* sf_button_light_strobe@2x.png */; };
 		0A9DB4DD170C302C00C77A22 /* MarsEditerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9DB4DC170C302C00C77A22 /* MarsEditerViewController.m */; };
-		0A9DB4DF170C35B500C77A22 /* BtnClose.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9DB4DE170C35B400C77A22 /* BtnClose.png */; };
 		0A9DB4F2170C606E00C77A22 /* UIPopoverListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9DB4F1170C606E00C77A22 /* UIPopoverListView.m */; };
 		0A9DB4F4170C629800C77A22 /* UIPopoverListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A9DB4F1170C606E00C77A22 /* UIPopoverListView.m */; };
-		0A9DB4FA170C640700C77A22 /* libWeChatSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A9DB4F6170C640700C77A22 /* libWeChatSDK.a */; };
-		0A9DB4FB170C640700C77A22 /* libWeChatSDK_armv7_armv7s.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A9DB4F7170C640700C77A22 /* libWeChatSDK_armv7_armv7s.a */; };
-		0A9DB50C170C6BF300C77A22 /* icon_11.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9DB508170C6BF300C77A22 /* icon_11.png */; };
-		0A9DB50D170C6BF300C77A22 /* icon_11@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9DB509170C6BF300C77A22 /* icon_11@2x.png */; };
-		0A9DB50E170C6BF300C77A22 /* icon_12.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9DB50A170C6BF300C77A22 /* icon_12.png */; };
-		0A9DB50F170C6BF300C77A22 /* icon_12@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9DB50B170C6BF300C77A22 /* icon_12@2x.png */; };
 		0A9DB512170C787200C77A22 /* icon_13@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9DB510170C787200C77A22 /* icon_13@2x.png */; };
 		0A9DB513170C787200C77A22 /* icon_13.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9DB511170C787200C77A22 /* icon_13.png */; };
 		0A9DB516170C78B500C77A22 /* icon14@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0A9DB514170C78B500C77A22 /* icon14@2x.png */; };
@@ -87,6 +82,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0A26DFF41712600B006D10BF /* artilce_icon_return.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = artilce_icon_return.png; sourceTree = "<group>"; };
+		0A26DFF51712600B006D10BF /* artilce_icon_return@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "artilce_icon_return@2x.png"; sourceTree = "<group>"; };
 		0A74E545170C7CD0008E4EB6 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		0A9DB4CC170C186400C77A22 /* Config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Config.h; path = ../Config.h; sourceTree = "<group>"; };
 		0A9DB4D1170C248200C77A22 /* sf_button_light_sos.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sf_button_light_sos.png; sourceTree = "<group>"; };
@@ -95,17 +92,8 @@
 		0A9DB4D6170C26DD00C77A22 /* sf_button_light_strobe@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "sf_button_light_strobe@2x.png"; sourceTree = "<group>"; };
 		0A9DB4DB170C302C00C77A22 /* MarsEditerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarsEditerViewController.h; sourceTree = "<group>"; };
 		0A9DB4DC170C302C00C77A22 /* MarsEditerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarsEditerViewController.m; sourceTree = "<group>"; };
-		0A9DB4DE170C35B400C77A22 /* BtnClose.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BtnClose.png; sourceTree = "<group>"; };
 		0A9DB4F0170C606E00C77A22 /* UIPopoverListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIPopoverListView.h; sourceTree = "<group>"; };
 		0A9DB4F1170C606E00C77A22 /* UIPopoverListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIPopoverListView.m; sourceTree = "<group>"; };
-		0A9DB4F6170C640700C77A22 /* libWeChatSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK.a; sourceTree = "<group>"; };
-		0A9DB4F7170C640700C77A22 /* libWeChatSDK_armv7_armv7s.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libWeChatSDK_armv7_armv7s.a; sourceTree = "<group>"; };
-		0A9DB4F8170C640700C77A22 /* WXApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApi.h; sourceTree = "<group>"; };
-		0A9DB4F9170C640700C77A22 /* WXApiObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WXApiObject.h; sourceTree = "<group>"; };
-		0A9DB508170C6BF300C77A22 /* icon_11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_11.png; sourceTree = "<group>"; };
-		0A9DB509170C6BF300C77A22 /* icon_11@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_11@2x.png"; sourceTree = "<group>"; };
-		0A9DB50A170C6BF300C77A22 /* icon_12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_12.png; sourceTree = "<group>"; };
-		0A9DB50B170C6BF300C77A22 /* icon_12@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_12@2x.png"; sourceTree = "<group>"; };
 		0A9DB510170C787200C77A22 /* icon_13@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_13@2x.png"; sourceTree = "<group>"; };
 		0A9DB511170C787200C77A22 /* icon_13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_13.png; sourceTree = "<group>"; };
 		0A9DB514170C78B500C77A22 /* icon14@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon14@2x.png"; sourceTree = "<group>"; };
@@ -181,8 +169,6 @@
 				0ADA04AD170AAF5500DD5E99 /* UIKit.framework in Frameworks */,
 				0ADA04AF170AAF5500DD5E99 /* Foundation.framework in Frameworks */,
 				0ADA04B1170AAF5500DD5E99 /* CoreGraphics.framework in Frameworks */,
-				0A9DB4FA170C640700C77A22 /* libWeChatSDK.a in Frameworks */,
-				0A9DB4FB170C640700C77A22 /* libWeChatSDK_armv7_armv7s.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,18 +185,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0A9DB4F5170C640700C77A22 /* WeiXin */ = {
-			isa = PBXGroup;
-			children = (
-				0A9DB4F6170C640700C77A22 /* libWeChatSDK.a */,
-				0A9DB4F7170C640700C77A22 /* libWeChatSDK_armv7_armv7s.a */,
-				0A9DB4F8170C640700C77A22 /* WXApi.h */,
-				0A9DB4F9170C640700C77A22 /* WXApiObject.h */,
-			);
-			name = WeiXin;
-			path = "SDKExport-1";
-			sourceTree = "<group>";
-		};
 		0ABB517D170D7252005801D1 /* 手电筒 */ = {
 			isa = PBXGroup;
 			children = (
@@ -262,7 +236,6 @@
 		0ADA04B2170AAF5500DD5E99 /* FlashLight */ = {
 			isa = PBXGroup;
 			children = (
-				0A9DB4F5170C640700C77A22 /* WeiXin */,
 				0ADA04E3170AAFBC00DD5E99 /* Mode */,
 				0ADA04E2170AAFB100DD5E99 /* Controller */,
 				0ADA04E1170AAFA700DD5E99 /* View */,
@@ -342,6 +315,8 @@
 		0ADA04EA170AB38B00DD5E99 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				0A26DFF41712600B006D10BF /* artilce_icon_return.png */,
+				0A26DFF51712600B006D10BF /* artilce_icon_return@2x.png */,
 				0ABB5190170DD04E005801D1 /* Icon@2x.png */,
 				0ABB5191170DD04E005801D1 /* Icon.png */,
 				0ABB517D170D7252005801D1 /* 手电筒 */,
@@ -349,11 +324,6 @@
 				0A9DB514170C78B500C77A22 /* icon14@2x.png */,
 				0A9DB511170C787200C77A22 /* icon_13.png */,
 				0A9DB510170C787200C77A22 /* icon_13@2x.png */,
-				0A9DB508170C6BF300C77A22 /* icon_11.png */,
-				0A9DB509170C6BF300C77A22 /* icon_11@2x.png */,
-				0A9DB50A170C6BF300C77A22 /* icon_12.png */,
-				0A9DB50B170C6BF300C77A22 /* icon_12@2x.png */,
-				0A9DB4DE170C35B400C77A22 /* BtnClose.png */,
 				0A9DB4D1170C248200C77A22 /* sf_button_light_sos.png */,
 				0A9DB4D2170C248200C77A22 /* sf_button_light_sos@2x.png */,
 				0A9DB4D5170C26DD00C77A22 /* sf_button_light_strobe.png */,
@@ -479,11 +449,6 @@
 				0A9DB4D4170C248200C77A22 /* sf_button_light_sos@2x.png in Resources */,
 				0A9DB4D7170C26DD00C77A22 /* sf_button_light_strobe.png in Resources */,
 				0A9DB4D8170C26DE00C77A22 /* sf_button_light_strobe@2x.png in Resources */,
-				0A9DB4DF170C35B500C77A22 /* BtnClose.png in Resources */,
-				0A9DB50C170C6BF300C77A22 /* icon_11.png in Resources */,
-				0A9DB50D170C6BF300C77A22 /* icon_11@2x.png in Resources */,
-				0A9DB50E170C6BF300C77A22 /* icon_12.png in Resources */,
-				0A9DB50F170C6BF300C77A22 /* icon_12@2x.png in Resources */,
 				0A9DB512170C787200C77A22 /* icon_13@2x.png in Resources */,
 				0A9DB513170C787200C77A22 /* icon_13.png in Resources */,
 				0A9DB516170C78B500C77A22 /* icon14@2x.png in Resources */,
@@ -496,6 +461,8 @@
 				0ABB5189170D7252005801D1 /* unclock@2x.png in Resources */,
 				0ABB5192170DD050005801D1 /* Icon@2x.png in Resources */,
 				0ABB5193170DD050005801D1 /* Icon.png in Resources */,
+				0A26DFF61712600B006D10BF /* artilce_icon_return.png in Resources */,
+				0A26DFF71712600B006D10BF /* artilce_icon_return@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

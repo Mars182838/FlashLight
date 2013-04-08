@@ -20,8 +20,8 @@
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         
-        self.editerArray = [[NSMutableArray alloc] initWithObjects:@"关于我们",@"友情分享",@"电邮反馈",@"给我个评价", nil];
-        self.messageArray = [[NSArray alloc] initWithObjects:@"朋友圈",@"好友圈",@"短信",@"邮箱", nil];
+        self.editerArray = [[NSMutableArray alloc] initWithObjects:@"关于我们",@"友情分享",@"电邮反馈", nil];
+        self.messageArray = [[NSArray alloc] initWithObjects:@"短   信",@"邮   箱", nil];
     }
     return self;
 }
@@ -56,14 +56,16 @@
     _titleLable.text = @"设置";
     [self.view addSubview:_titleLable];
     
-    _editerTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 50, WIDTH, HEIGHT) style:UITableViewStyleGrouped];
+    _editerTableView = [[UITableView alloc] initWithFrame:CGRectMake(0, 40, WIDTH, HEIGHT) style:UITableViewStyleGrouped];
     _editerTableView.delegate = self;
     _editerTableView.dataSource = self;
+    _editerTableView.backgroundView = nil;
+    _editerTableView.backgroundColor = [UIColor lightGrayColor];
     [self.view addSubview:_editerTableView];
     
     _backButton = [UIButton buttonWithType:UIButtonTypeCustom];
-    _backButton.frame = CGRectMake(20, 5, 30, 30);
-    [_backButton setImage:[UIImage imageNamed:@"BtnClose.png"] forState:UIControlStateNormal];
+    _backButton.frame = CGRectMake(10, 5, 30, 30);
+    [_backButton setImage:[UIImage imageNamed:@"artilce_icon_return.png"] forState:UIControlStateNormal];
     [_backButton addTarget:self action:@selector(backPress:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:_backButton];
     
@@ -98,7 +100,7 @@
     NSString *headString = nil;
     if (section == 0) {
         
-        headString = @"FlashLight";
+        headString = @"摇换";
         return headString;
     }
     else{
@@ -127,13 +129,8 @@
         
     }else{
         
-        UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(0, 0, 300, 50)];
-        label.font = [UIFont systemFontOfSize:18.0f];
-        label.text = [self.editerArray objectAtIndex:indexPath.row];
-        label.textAlignment = NSTextAlignmentCenter;
-        label.backgroundColor = [UIColor clearColor];
-        [cell.contentView addSubview:label];
-        [label release];
+        cell.textLabel.text = [self.editerArray objectAtIndex:indexPath.row];
+        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     }
     
     return cell;
@@ -149,8 +146,8 @@
     }
     else if (indexPath.row == 1)
     {
-        CGFloat yHeight = 272.0f;
-        CGFloat yoffset = (HEIGHT - 262)/2;
+        CGFloat yHeight = 152.0f;
+        CGFloat yoffset = (HEIGHT - 152)/2;
         UIPopoverListView *listView = [[UIPopoverListView alloc] initWithFrame:CGRectMake(10, yoffset, 300, yHeight)];
         listView.delegate = self;
         listView.datasource = self;
@@ -179,14 +176,17 @@
     }
 }
 
+/** UIPopverListView DataSource and Delegate Methods
+ */
+
 #pragma mark UIPopoverListView DataSource
 
 -(UITableViewCell *)popoverListView:(UIPopoverListView *)popoverListView cellForIndexPath:(NSIndexPath *)indexPath
 {
     static NSString *indentifer = @"cellIndentifer";
     UITableViewCell *cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:indentifer] autorelease];
-    UIImageView *snsImage = [[UIImageView alloc] initWithFrame:CGRectMake(10, 5, 50, 50)];
-    snsImage.image = [UIImage imageNamed:[NSString stringWithFormat:@"icon_1%d",(indexPath.row + 1)]];
+    UIImageView *snsImage = [[UIImageView alloc] initWithFrame:CGRectMake(10, 5, 45, 45)];
+    snsImage.image = [UIImage imageNamed:[NSString stringWithFormat:@"icon_1%d",(indexPath.row + 3)]];
     [cell.contentView addSubview:snsImage];
     [snsImage release];
     
@@ -201,7 +201,7 @@
 - (NSInteger)popoverListView:(UIPopoverListView *)popoverListView
        numberOfRowsInSection:(NSInteger)section
 {
-    return 4;
+    return 2;
 }
 
 - (CGFloat)popoverListView:(UIPopoverListView *)popoverListView
@@ -216,16 +216,8 @@
      didSelectIndexPath:(NSIndexPath *)indexPath
 {
     switch (indexPath.row) {
+      
         case 0:
-        {
-            break;
-        }
-        case 1:
-        {
-            
-            break;
-        }
-        case 2:
         {
             Class messageClass = ((NSClassFromString(@"MFMessageComposeViewController")));
             if (messageClass != nil) {
@@ -246,7 +238,7 @@
             
             break;
         }
-        case 3:
+        case 1:
         {
             Class mailClass = (NSClassFromString(@"MFMailComposeViewController"));
             
@@ -274,6 +266,8 @@
     [alter show];
 }
 
+/** @name 应用内发送短信 
+ */
 #pragma mark - MFMessage Methods
 
 -(void)displaySMSComoserPicker
@@ -312,7 +306,8 @@
 
     [self dismissViewControllerAnimated:YES completion:nil];
 }
-
+/** @name 应用内发送邮件
+ */
 #pragma mark - MFMailMessage Methods
 
 -(void)displayMailPickerWithSubject:(NSString *)subject andObject:(NSString *)object andMessage:(NSString *)message
@@ -324,10 +319,6 @@
     /// 添加收件人
     NSArray *toRecipients = [NSArray arrayWithObject:object];
     [mailController setToRecipients:toRecipients];
-    
-//    /// 添加抄送人
-//    NSArray *ccRecipients = [NSArray arrayWithObjects:@"wj182838@sina.cn",@"wj182838@gmail.com", nil];
-//    [mailController setCcRecipients:ccRecipients];
     
     /// 发送正文
     NSString *emailBody =[NSString stringWithFormat:@"%@",message];
@@ -371,11 +362,17 @@
     }
 }
 
+#pragma mark - UIButton Methods
+
+/** 取消视图，返回到上个界面
+ */
 -(void)backPress:(id)sender
 {
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
+/** UISwitch 的状态，通过开关控制是否支持摇动来切换灯的开关
+ */
 -(void)switchBtn:(UISwitch *)sender
 {
     UISwitch *switchBtn = sender;
@@ -395,10 +392,11 @@
     [userDefaults synchronize]; ///> 强制写入磁盘    
 }
 
+
 -(void)changeViewWithAnimation
 {
     _messageView = [[UIView alloc] initWithFrame:CGRectMake(0, 40, WIDTH, HEIGHT-40)];
-    _messageView.backgroundColor = [UIColor blackColor];
+    _messageView.backgroundColor = [UIColor grayColor];
     
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(20, 0, 280, 260)];
     label.numberOfLines = 0;
@@ -418,12 +416,14 @@
     [_messageView addGestureRecognizer:tap];
     
     [self.view addSubview:_messageView];
-
+    [tap release];
 }
 
+/** 点击取消视图 */
 -(void)tapGesture:(id)sender
 {
     [_messageView removeFromSuperview];
+    [self.editerTableView reloadData];
 }
 
 - (void)didReceiveMemoryWarning

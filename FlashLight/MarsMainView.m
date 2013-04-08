@@ -54,7 +54,7 @@
         
         /// 手电筒开关按钮
         _lightBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        _lightBtn.frame = CGRectMake(70, 200, 193, 215);
+        _lightBtn.frame = CGRectMake(70, 200, 195, 215);
         [_lightBtn setImage:[UIImage imageNamed:@"sf_button_normal.png"] forState:UIControlStateNormal];
         [self addSubview:_lightBtn];
         
@@ -64,12 +64,12 @@
         
         /// 控制是否打开闪关灯的Button
         _switchBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        _switchBtn.frame = CGRectMake(30, 380, 60, 60);
+        _switchBtn.frame = CGRectMake(30, self.frame.size.height - 80, 60, 60);
         [_switchBtn setImage:[UIImage imageNamed:@"clock.png"] forState:UIControlStateNormal];
         [self addSubview:_switchBtn];
         
         _editerBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-        _editerBtn.frame = CGRectMake(230, 380, 60, 60);
+        _editerBtn.frame = CGRectMake(230, self.frame.size.height - 80, 60, 60);
         [_editerBtn setImage:[UIImage imageNamed:@"set.png"] forState:UIControlStateNormal];
         [self addSubview:_editerBtn];
         

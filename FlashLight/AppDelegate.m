@@ -11,15 +11,6 @@
 
 @implementation AppDelegate
 
-- (id)init{
-    if(self = [super init]){
-        
-        _scene = WXSceneSession;
-        
-    }
-    return self;
-}
-
 - (void)dealloc
 {
     [_window release];
@@ -34,13 +25,12 @@
     
     
     _marsController = [[MarsMainViewController alloc] initWithNibName:nil bundle:nil];
-    
+        
     self.window.rootViewController = _marsController;
     
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
-    [WXApi registerApp:@"wx3b627267ac81606e"];
     return YES;
 }
 
@@ -70,16 +60,6 @@
 {
     _marsController.isLight = YES;
     [_marsController turnOnLight:YES];
-}
-
--(BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url
-{
-    return [WXApi handleOpenURL:url delegate:self];
-}
-
--(BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
-{
-    return [WXApi handleOpenURL:url delegate:self];
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application
